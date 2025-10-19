@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReciclaVida - Reciclaje de Muebles y Ropa</title>
+  
+  <!-- ======== META SEO ======== -->
+  <meta name="description" content="ReciclaVida - Empresa dedicada al reciclaje de muebles y ropa en Murcia. Transformamos objetos usados en productos sostenibles y únicos.">
+  <meta name="keywords" content="reciclaje, muebles, ropa, sostenibilidad, Murcia, reutilización, medio ambiente, ecología">
+  <meta name="author" content="ReciclaVida">
+
   <style>
     /* ======== ESTILOS GENERALES ======== */
     * {
@@ -11,6 +17,10 @@
       padding: 0;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -44,6 +54,7 @@
       justify-content: center;
       gap: 20px;
       padding: 10px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -152,9 +163,6 @@
       .hero h2 {
         font-size: 2rem;
       }
-      nav {
-        flex-wrap: wrap;
-      }
     }
   </style>
 </head>
@@ -168,30 +176,30 @@
     <a href="#inicio">Inicio</a>
     <a href="#servicios">Servicios</a>
     <a href="#sobre">Sobre Nosotros</a>
-    <a href="reciclavida.murcia@gmail.com">Contacto</a>
+    <a href="mailto:reciclavida.murcia@gmail.com">Contacto</a>
   </nav>
 
   <section class="hero" id="inicio">
     <h2>¡Dale una nueva vida a tus objetos!</h2>
     <p>Transformamos muebles y ropa usados en productos sostenibles y únicos.</p>
-    <button class="btn" onclick="scrollToSection('servicios')">Descubre más</button>
+    <a href="#servicios" class="btn">Descubre más</a>
   </section>
 
   <section id="servicios">
     <h2 class="section-title">Nuestros Servicios</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://www2.0zz0.com/2025/10/19/11/954357577.jpg" alt="Reciclaje de muebles">
+        <img src="https://www2.0zz0.com/2025/10/19/11/954357577.jpg" alt="Reciclaje de muebles antiguos restaurados">
         <h3>Reciclaje de Muebles</h3>
         <p>Reparamos, restauramos y reutilizamos muebles antiguos para crear piezas únicas y sostenibles.</p>
       </div>
       <div class="card">
-        <img src="https://www2.0zz0.com/2025/10/19/11/238560748.jpg" alt="Reutilización de ropa">
+        <img src="https://www2.0zz0.com/2025/10/19/11/238560748.jpg" alt="Reutilización y rediseño de ropa usada">
         <h3>Reutilización de Ropa</h3>
         <p>Damos una segunda oportunidad a la ropa usada mediante donaciones y rediseños creativos.</p>
       </div>
       <div class="card">
-        <img src="https://www2.0zz0.com/2025/10/19/12/961244035.jpg" alt="Consultoría ecológica">
+        <img src="https://www2.0zz0.com/2025/10/19/12/961244035.jpg" alt="Consultoría ecológica para empresas y hogares">
         <h3>Consultoría Ecológica</h3>
         <p>Ayudamos a empresas y hogares a implementar prácticas sostenibles y reducir su huella ambiental.</p>
       </div>
@@ -201,24 +209,21 @@
   <section id="sobre">
     <h2 class="section-title">Sobre Nosotros</h2>
     <p><strong>ReciclaVida</strong> es una empresa social que ofrece un servicio de recogida, clasificación y transformación de residuos (ropa, muebles, electrodomésticos, etc.) a través del empleo de personas en riesgo de exclusión social.
-La empresa actúa como intermediaria entre hogares o empresas que quieren deshacerse de objetos y personas que buscan una segunda oportunidad laboral. Los objetos reciclados se arreglan, restauran o reutilizan y luego se venden a bajo coste o se donan a personas con pocos recursos.
-</p>
+    La empresa actúa como intermediaria entre hogares o empresas que quieren deshacerse de objetos y personas que buscan una segunda oportunidad laboral. Los objetos reciclados se arreglan, restauran o reutilizan y luego se venden a bajo coste o se donan a personas con pocos recursos.</p>
   </section>
 
   <section id="contacto">
     <h2 class="section-title">Contáctanos</h2>
-    <p>¿Tienes muebles o ropa que ya no usas? ¡Nosotros los transformamos! reciclavida.murcia@gmail.com </p>
-    <button class="btn" onclick="alert('Gracias por contactarnos. Te responderemos pronto.')">Enviar Mensaje</button>
+    <p>¿Tienes muebles o ropa que ya no usas? ¡Nosotros los transformamos! 
+      <a href="mailto:reciclavida.murcia@gmail.com">reciclavida.murcia@gmail.com</a>
+    </p>
+    <button class="btn" onclick="window.location.href='mailto:reciclavida.murcia@gmail.com'">
+      Enviar Mensaje
+    </button>
   </section>
 
   <footer>
     <p>© 2025 ReciclaVida | Todos los derechos reservados</p>
   </footer>
-
-  <script>
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
